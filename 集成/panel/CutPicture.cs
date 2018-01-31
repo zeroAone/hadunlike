@@ -447,7 +447,7 @@ namespace 集成.panel
 
         private void CutPicture_Load(object sender, EventArgs e)
         {
-
+             //sd
         }
     }
 }
