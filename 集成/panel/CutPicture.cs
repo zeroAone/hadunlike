@@ -442,7 +442,7 @@ namespace 集成.panel
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            chooseXml = comboBox1.Text;
+            chooseXml = comboBox1.Text;//sd
         }
 
         private void CutPicture_Load(object sender, EventArgs e)
