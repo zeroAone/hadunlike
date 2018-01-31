@@ -444,5 +444,10 @@ namespace 集成.panel
         {
             chooseXml = comboBox1.Text;
         }
+
+        private void CutPicture_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

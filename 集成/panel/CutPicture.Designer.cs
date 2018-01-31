@@ -37,6 +37,7 @@
             this.choose_Pic = new CCWin.SkinControl.SkinButton();
             this.all_thing_isOk = new CCWin.SkinControl.SkinButton();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.skinButton3 = new CCWin.SkinControl.SkinButton();
             this.skinButton2 = new CCWin.SkinControl.SkinButton();
             this.skinButton1 = new CCWin.SkinControl.SkinButton();
@@ -50,7 +51,6 @@
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.skinPanel2 = new CCWin.SkinControl.SkinPanel();
             this.show_pic = new CCWin.SkinControl.SkinPictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.skinPanel1.SuspendLayout();
             this.skinPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.show_pic)).BeginInit();
@@ -203,6 +203,15 @@
             this.skinPanel1.NormlBack = null;
             this.skinPanel1.Size = new System.Drawing.Size(1168, 57);
             this.skinPanel1.TabIndex = 146;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(1077, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(91, 20);
+            this.comboBox1.TabIndex = 157;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // skinButton3
             // 
@@ -411,15 +420,6 @@
             this.show_pic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pic_MouseDown);
             this.show_pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pic_MouseUp);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1077, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 20);
-            this.comboBox1.TabIndex = 157;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // CutPicture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -431,6 +431,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CutPicture";
             this.Text = "CutPicture";
+            this.Load += new System.EventHandler(this.CutPicture_Load);
             this.skinPanel1.ResumeLayout(false);
             this.skinPanel1.PerformLayout();
             this.skinPanel2.ResumeLayout(false);
